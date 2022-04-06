@@ -31,6 +31,7 @@ namespace ProductApps
         {
             decimal myTotalDeliveryPayment;
             decimal MyTotalWrapPayment;
+            decimal MyTotalGSTPayment;
             try
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
@@ -38,8 +39,11 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 myTotalDeliveryPayment = (cProduct.TotalPayment) + 25.00m;
                 MyTotalWrapPayment = myTotalDeliveryPayment + 5.00m;
+                MyTotalGSTPayment = MyTotalWrapPayment * 1.1m;
                 totalChargeTextBlock.Text = myTotalDeliveryPayment.ToString();
                 totalWrapChargeTextBlock.Text = MyTotalWrapPayment.ToString();
+                totalGSTChargeTextBlock.Text = MyTotalGSTPayment.ToString();
+
             }
             catch (FormatException)
             {

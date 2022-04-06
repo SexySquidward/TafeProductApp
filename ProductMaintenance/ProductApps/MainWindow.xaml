@@ -18,6 +18,8 @@
         <TextBlock x:Name="totalChargeTextBlock"  HorizontalAlignment="Left" Margin="189,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
         <Label Content="Total Change after adding &#xA;the Wrap charge ($5):" HorizontalAlignment="Left" Margin="46,225,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="totalWrapChargeTextBlock"  HorizontalAlignment="Left" Margin="189,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <Label Content="Total Change after GST @10%:" HorizontalAlignment="Left" Margin="46,264,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="totalGSTChargeTextBlock"  HorizontalAlignment="Left" Margin="217,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
 
 
     </Grid>
